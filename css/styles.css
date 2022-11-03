@@ -1,0 +1,170 @@
+@import url(variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-light-grayish-blue);
+    font-weight: var(--normal);
+    font-size: var(--font-size);
+}
+
+/* CLASSES USED IN MULTIPLE SECTIONS */
+.card {
+    width: 732px;
+    min-height: 840px;
+    margin-inline: auto;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.text-bold {
+    font-weight: var(--bold);
+}
+
+.grayish-blue-text {
+    color: var(--Grayish-blue);
+}
+
+.black-text {
+    color: #000;
+}
+
+.flex {
+    display: flex;
+}
+
+.very-dark-blue-text {
+    color: var(--blue);
+}
+
+.unread-bg {
+    background-color: var(--Very-light-grayish-blue);
+    width: max-content;
+}
+
+.border {
+    border: 1px solid var(--Light-grayish-blue-2);
+}
+
+.sent-message {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dark-grayish-blue-text {
+    color: var(--dark-grayish-blue-text);
+}
+
+.red-text {
+    color: var(--red);
+    margin-top: 5px;
+    font-size: 2rem;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+/*---------------------------------------------------------------------------------------------*/
+
+/* NOTIFICATIONS AREA */
+.header {
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.notification__number {
+    color: var(--White);
+    background-color: var(--blue);
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+/* ------------------------------------------------------------------------------------------------- */
+
+/* MESSAGES */
+.message {
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 80px;
+    margin-bottom: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.message .text {
+    margin-left: 20px;
+}
+
+.message .text p {
+    margin-bottom: 0;
+}
+
+.message img {
+    height: 45px;
+    width: 45px;
+    margin: 0;
+}
+
+/* .indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--red);
+    border-radius: 4px;
+    margin-top: 1.5%;
+    margin-left: 10px;
+} */
+/* ------------------------------------------------------------------------------ */
+
+/*USED IN RIZKY HASANUDDIN MESSAGE TO GIVE SEPARATION BETWEEN THE DURATION AND MESSAGE*/
+.margins {
+    margin-top: 15px;
+}
+
+button:hover {
+    color: var(--blue);
+}
+
+.text-bold:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.sent-message:hover {
+    background-color: var(--Light-grayish-blue-2);
+    color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+
+#chess {
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 0.75rem;
+    }
+
+    .card {
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0;
+        padding: 17px;
+        border-radius: 0;
+    }
+
+    .message {
+        width: 100%;
+        min-height: 85px;
+    }
+}
